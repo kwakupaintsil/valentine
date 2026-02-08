@@ -71,10 +71,24 @@ const timelineEvents = [
   },
   {
     date: "December 13, 2025",
-    title: "The Conversations Began",
-    description: "We started talking, really talking. Every message brought us closer, every conversation felt like coming home. We knew this was different, this was special. 💬",
+    title: "Hey Stranger ☺️",
+    description: "A couple of random texts, funny comments, great conversations later, long phone calls and even deeper conversations. Quite rare to connect intellectually these days. A willingness to build a friendship and an interest to build a relationship. 💬",
     icon: "heart",
     emoji: "💕",
+  },
+  {
+    date: "December 26, 2025",
+    title: "Boxing Day Revelation",
+    description: "\"Okay God I see you\" - Is this who I've been prepared for? A few more FaceTime calls and virtual movie dates later, I knew God had just brought me my wife. 🙏",
+    icon: "heart",
+    emoji: "✨",
+  },
+  {
+    date: "New Year's Eve 2025",
+    title: "The Prayer",
+    description: "On one of our calls, a heartfelt prayer dedicating our new journey to knowing each other, we went before God. How refreshing. �💫",
+    icon: "heart",
+    emoji: "�",
   },
   {
     date: "January 15, 2026",
@@ -82,6 +96,13 @@ const timelineEvents = [
     description: "The best day of my life. You said yes, and in that moment, my world became complete. You are my sunshine, my everything. ☀️",
     icon: "heart",
     emoji: "💖",
+  },
+  {
+    date: "First Meeting",
+    title: "Seeing You in the Flesh",
+    description: "Our first day of meeting, seeing the love of my life in the flesh for the first time. Feeling like a dream. Nervous not just meeting you but Juliet and Kamsi too. Amazing feeling, still got a lot more family members to go 🤣",
+    icon: "heart",
+    emoji: "🥰",
   },
   {
     date: "Our Symbol",
@@ -282,6 +303,31 @@ export default function ValentinePage() {
               Forever yours 💕
             </p>
           </div>
+
+          {/* Our Song - YouTube Player */}
+          <div className="mt-12 max-w-md mx-auto">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-5 border-2 border-pink-300">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <span className="text-2xl">🎵</span>
+                <div className="text-center">
+                  <p className="text-lg font-bold text-gray-800">Our Song</p>
+                  <p className="text-sm text-pink-500">First Time - Teeks 💕</p>
+                </div>
+                <span className="text-2xl">🎵</span>
+              </div>
+              <iframe
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/JxW9qXlWlpo"
+                title="First Time by Teeks"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="rounded-xl shadow-md"
+              />
+              <p className="text-xs text-center text-gray-500 mt-3">Press play to listen together 🎧</p>
+            </div>
+          </div>
         </div>
       )}
     </div>
@@ -362,20 +408,6 @@ export default function ValentinePage() {
         </div>
 
         {renderTimeline()}
-
-        <div className="text-center mt-16">
-          <button
-            onClick={() => {
-              setShowQuestion(true);
-              setTimeout(() => {
-                document.getElementById("question")?.scrollIntoView({ behavior: "smooth" });
-              }, 100);
-            }}
-            className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-white text-lg font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-          >
-            Continue to Something Special ✨
-          </button>
-        </div>
       </section>
 
       {/* Sunflower Walk Section */}
@@ -410,6 +442,21 @@ export default function ValentinePage() {
                 <Sunflower size={60 + Math.sin(i) * 20} />
               </div>
             ))}
+          </div>
+
+          {/* Continue Button */}
+          <div className="mt-12">
+            <button
+              onClick={() => {
+                setShowQuestion(true);
+                setTimeout(() => {
+                  document.getElementById("question")?.scrollIntoView({ behavior: "smooth" });
+                }, 100);
+              }}
+              className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-white text-lg font-bold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            >
+              Continue to Something Special ✨
+            </button>
           </div>
         </div>
       </section>
