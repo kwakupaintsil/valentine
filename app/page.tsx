@@ -310,7 +310,7 @@ export default function ValentinePage() {
               <div className="flex items-center justify-center gap-3 mb-4">
                 <span className="text-3xl">🎵</span>
                 <div className="text-center">
-                  <p className="text-xl font-bold text-gray-800">Our Song</p>
+                  <p className="text-xl font-bold text-gray-800">My Heart to You</p>
                   <p className="text-base text-pink-500">First Time - Teeks 💕</p>
                 </div>
                 <span className="text-3xl">🎵</span>
@@ -325,7 +325,7 @@ export default function ValentinePage() {
                 allowFullScreen
                 className="rounded-xl shadow-md"
               />
-              <p className="text-sm text-center text-gray-500 mt-4">Press play to listen together 🎧</p>
+              <p className="text-sm text-center text-gray-500 mt-4">Press Play 🎧</p>
             </div>
           </div>
         </div>
