@@ -305,19 +305,19 @@ export default function ValentinePage() {
           </div>
 
           {/* Our Song - YouTube Player */}
-          <div className="mt-12 max-w-md mx-auto">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-5 border-2 border-pink-300">
+          <div className="mt-12 max-w-2xl mx-auto">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-6 border-2 border-pink-300">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <span className="text-2xl">🎵</span>
+                <span className="text-3xl">🎵</span>
                 <div className="text-center">
-                  <p className="text-lg font-bold text-gray-800">Our Song</p>
-                  <p className="text-sm text-pink-500">First Time - Teeks 💕</p>
+                  <p className="text-xl font-bold text-gray-800">Our Song</p>
+                  <p className="text-base text-pink-500">First Time - Teeks 💕</p>
                 </div>
-                <span className="text-2xl">🎵</span>
+                <span className="text-3xl">🎵</span>
               </div>
               <iframe
                 width="100%"
-                height="200"
+                height="350"
                 src="https://www.youtube.com/embed/2yUouC9iXDg"
                 title="First Time by Teeks"
                 frameBorder="0"
@@ -325,7 +325,7 @@ export default function ValentinePage() {
                 allowFullScreen
                 className="rounded-xl shadow-md"
               />
-              <p className="text-xs text-center text-gray-500 mt-3">Press play to listen together 🎧</p>
+              <p className="text-sm text-center text-gray-500 mt-4">Press play to listen together 🎧</p>
             </div>
           </div>
         </div>
